@@ -10,12 +10,12 @@ public class Vehicle {
     public Engine engine;
     private int numberOfWheels;
 
-    public Vehicle (String vehicleName, String brand, String model, String engine) {
+    public Vehicle (String vehicleName, String brand, String model, Engine engine) {
 
         this.vehicleName = vehicleName ;
         this.brand = brand ;
         this.model = model;
-        this.engine = Engine.class;
+        this.engine = engine;
 
 
         if ((this.brand == "suzuki") && (this.model == "gsx") ) {

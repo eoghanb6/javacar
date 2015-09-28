@@ -3,12 +3,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 public class Engine {
     public String brand;
-    public boolean fuelType;
+    public String fuelType;
     public float capacity;
     public float width;
     public float height;
     private String updateTime ;
-    public Engine (String brand, boolean fuelType, float capacity, float width, float height ) {
+    public Engine (String brand, String fuelType, float capacity, float width, float height ) {
     this.brand = brand ;
     this.fuelType = fuelType ;
     this.capacity = capacity ;
@@ -18,7 +18,7 @@ public class Engine {
 
 
     }
-    public void  updateEngine(String brand, boolean fuelType, float capacity, float width, float height)   {
+    public void  updateEngine(String brand, String fuelType, float capacity, float width, float height)   {
         this.brand = brand ;
         this.fuelType = fuelType ;
         this.capacity = capacity ;

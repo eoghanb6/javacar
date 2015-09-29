@@ -1,6 +1,7 @@
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+//creates Engine class
 public class Engine {
     public String brand;
     public String fuelType;
@@ -8,6 +9,7 @@ public class Engine {
     public float width;
     public float height;
     private String updateTime ;
+      //creates constructor for Engine class
     public Engine (String brand, String fuelType, float capacity, float width, float height ) {
     this.brand = brand ;
     this.fuelType = fuelType ;
@@ -18,6 +20,7 @@ public class Engine {
 
 
     }
+          //created method for updating engine specs
     public void  updateEngine(String brand, String fuelType, float capacity, float width, float height)   {
         this.brand = brand ;
         this.fuelType = fuelType ;
@@ -30,6 +33,7 @@ public class Engine {
         updateTime = dateFormat.format(date) ;
 
     }
+         //created method for returning engine information
     public String getEngine() {
 
         return (brand + " " + fuelType + " " + capacity + "" + width + "" +height) ;
